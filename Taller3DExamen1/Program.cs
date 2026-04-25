@@ -41,7 +41,8 @@
             Scenas scena = new Scena1();
             scena.ScenasPlayer(player);
             Console.WriteLine("VIDA TOTAL: " + player.GetLife());
-            Console.WriteLine("Presione 1 para salir");
+            Console.WriteLine("Presione 1 Volver ha intentar");
+            Console.WriteLine("Presione 2 para salir");
             FinalizedGame();
         }
         private static void FinalizedGame()
@@ -50,6 +51,10 @@
             switch (exit)
             {
                 case "1":
+                    Console.Clear();
+                    Play();
+                    break;
+                case "2":
                     Console.Clear();
                     Execute();
                     break;
