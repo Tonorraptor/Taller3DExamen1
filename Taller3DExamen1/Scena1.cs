@@ -15,6 +15,7 @@ namespace Taller3DExamen1
         public override void ScenasPlayer(Player player)
         {
             description = "EL BOSQUE";
+            Console.WriteLine(description);
             string options = "";
             Console.WriteLine("1. Explorar el bosque");
             Console.WriteLine("2. Quedarte ahi");
@@ -31,12 +32,15 @@ namespace Taller3DExamen1
                 {
                     Console.WriteLine("Te embarraste en el lodo y los mosquitos no te pican");
                     Console.WriteLine("Puedes seguir tu casmino");
+                    new Scena2("").ScenasPlayer(player);
                 }
                 else if (option2 == "2")
                 {
                     Console.WriteLine("Te estan atacando, pierdes 10 de vida");
                     player.GetDamage(-10);
                     Console.WriteLine("Huyes del lugar");
+                    Console.WriteLine("Vida actual: " + player.GetLife());
+                    new Scena2("").ScenasPlayer(player);
                 }
             }
             else if (options == "2")
@@ -55,12 +59,15 @@ namespace Taller3DExamen1
                     Console.WriteLine("Llegaste al rio");
                     Console.WriteLine("Los mosquitos te picaron");
                     player.GetDamage(-10);
+                    Console.WriteLine("Vida actual: " + player.GetLife());
+                    new Scena2("").ScenasPlayer(player);
                 }
                 else if (option2 == "2")
                 {
                     Console.WriteLine("El allosaurio te pisa el cuerpo");
                     Console.WriteLine("Te come");
                     player.GetDamage(-100);
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                     Console.WriteLine("Perdiste.................");
                 }
 

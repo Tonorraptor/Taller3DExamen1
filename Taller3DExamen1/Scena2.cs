@@ -13,10 +13,11 @@ namespace Taller3DExamen1
         public override void ScenasPlayer(Player player)
         {
             description = "EL RIO";
+            Console.WriteLine(description);
             string options = "";
             Console.WriteLine("1. Sigue toda la rivera del rio hacia el norte");
             Console.WriteLine("2. Sigue toda la rivera del rio hacia el sur");
-            Console.WriteLine("2. Cruza el rio");
+            Console.WriteLine("3. Cruza el rio");
             options = Console.ReadLine();
             if (options == "1")
             {
@@ -31,14 +32,16 @@ namespace Taller3DExamen1
                     Console.WriteLine("Te caes");
                     Console.WriteLine("Te quemas");
                     Console.WriteLine("Mueres calcinado");
-                    player.GetLife(-100);
+                    player.GetDamage(-100);
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                 }
                 else if (option2 == "1")
                 {
                     Console.WriteLine("Escapas al sur");
                     Console.WriteLine("Te vuelve a encontrar a los mosquitos");
-                    player.GetLife(-10);
+                    player.GetDamage(-10);
                     Console.WriteLine("Llegas a las cascadas");
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                 }
             }
             else if (options == "2")
@@ -62,7 +65,8 @@ namespace Taller3DExamen1
                 {
                     Console.WriteLine("El allosaurio te pisa el cuerpo");
                     Console.WriteLine("Te come");
-                    player.GetLife(-100);
+                    player.GetDamage(-100);
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                     Console.WriteLine("Perdiste.................");
                 }
 
@@ -84,8 +88,9 @@ namespace Taller3DExamen1
                     Console.WriteLine("Se pelean");
                     Console.WriteLine("El musasaurus lo arrastra al mar");
                     Console.WriteLine("Estas herido");
-                    player.GetLife(-50);
+                    player.GetDamage(-50);
                     Console.WriteLine("Llegas al acantilado");
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                 }
                 else if (option2 == "2")
                 {
@@ -93,7 +98,8 @@ namespace Taller3DExamen1
                     Console.WriteLine("Intentas cruzar el rio");
                     Console.WriteLine("Como estas herido");
                     Console.WriteLine("El mosasaurus te arrastra al fondo");
-                    player.GetLife(-100);
+                    player.GetDamage(-100);
+                    Console.WriteLine("Vida actual: " + player.GetLife());
                     Console.WriteLine("Perdiste.................");
                 }
 

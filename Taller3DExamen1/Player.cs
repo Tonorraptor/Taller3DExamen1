@@ -27,7 +27,10 @@ namespace Taller3DExamen1
 
         public int GetDamage(int life)
         {
-            return Life+=life;
+            Life+=life;
+            if (Life < 0)
+                Life = 0;
+            return Life;
         }
     }
 }
