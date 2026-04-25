@@ -12,7 +12,7 @@ namespace Taller3DExamen1
         public Player(string name)
         {
             Name = name;
-            Life = 0;
+            Life = 100;
         }
 
         public string GetName()
@@ -27,7 +27,7 @@ namespace Taller3DExamen1
 
         public int GetDamage(int life)
         {
-            return Life*=life;
+            return Life+=life;
         }
     }
 }
