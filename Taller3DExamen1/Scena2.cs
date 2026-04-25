@@ -42,6 +42,7 @@ namespace Taller3DExamen1
                     player.GetDamage(-10);
                     Console.WriteLine("Llegas a las cascadas");
                     Console.WriteLine("Vida actual: " + player.GetLife());
+                    new Scena3("").ScenasPlayer(player);
                 }
             }
             else if (options == "2")
@@ -60,6 +61,7 @@ namespace Taller3DExamen1
                     Console.WriteLine("Saltas los desfiladeros");
                     Console.WriteLine("La lluvia te atrapa");
                     Console.WriteLine("Pero vez com el allosaurio ruge porque no puede atraparte");
+                    new Scena3("").ScenasPlayer(player);
                 }
                 else if (option2 == "2")
                 {
@@ -91,6 +93,7 @@ namespace Taller3DExamen1
                     player.GetDamage(-50);
                     Console.WriteLine("Llegas al acantilado");
                     Console.WriteLine("Vida actual: " + player.GetLife());
+                    new Scena3("").ScenasPlayer(player);
                 }
                 else if (option2 == "2")
                 {
