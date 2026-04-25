@@ -14,7 +14,7 @@ namespace Taller3DExamen1
 
         public override void ScenasPlayer(Player player)
         {
-            description = "Te alejaste de tu manada";
+            description = "EL BOSQUE";
             string options = "";
             Console.WriteLine("1. Explorar el bosque");
             Console.WriteLine("2. Quedarte ahi");
@@ -24,7 +24,7 @@ namespace Taller3DExamen1
                 Console.WriteLine("Encuentras un rio");
                 Console.WriteLine("Hay mosquitos");
                 Console.WriteLine("1. Embarrate en el lodo");
-                Console.WriteLine("2. Pelearte cin los mosquitos");
+                Console.WriteLine("2. Pelearte con los mosquitos");
                 string option2 = Console.ReadLine();
 
                 if (option2 == "1")
