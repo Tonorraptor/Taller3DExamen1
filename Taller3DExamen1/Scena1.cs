@@ -8,7 +8,7 @@ namespace Taller3DExamen1
 {
     internal class Scena1 : Scenas
     {
-        public Scena1(string description) : base("")
+        public Scena1() : base("")
         {
         }
 
@@ -35,7 +35,7 @@ namespace Taller3DExamen1
                 else if (option2 == "2")
                 {
                     Console.WriteLine("Te estan atacando, pierdes 10 de vida");
-                    player.GetLife(-10);
+                    player.GetDamage(-10);
                     Console.WriteLine("Huyes del lugar");
                 }
             }
@@ -54,13 +54,13 @@ namespace Taller3DExamen1
                     Console.WriteLine("Te pusiste valiente y te alejaste de ahi");
                     Console.WriteLine("Llegaste al rio");
                     Console.WriteLine("Los mosquitos te picaron");
-                    player.GetLife(-10);
+                    player.GetDamage(-10);
                 }
                 else if (option2 == "2")
                 {
                     Console.WriteLine("El allosaurio te pisa el cuerpo");
                     Console.WriteLine("Te come");
-                    player.GetLife(-100);
+                    player.GetDamage(-100);
                     Console.WriteLine("Perdiste.................");
                 }
 
