@@ -34,8 +34,8 @@
             Player player = new Player(name);
 
             Console.WriteLine("Nombre: " + player.GetName());
-            Console.WriteLine("Vida: " + player.GetLife());
-            Console.WriteLine("Daño: " + player.GetDamage());
+            Console.WriteLine("Vida: " + player.GetLife(100));
+            Console.WriteLine("Ataque: " + player.GetDamage());
         }
     }
 }
